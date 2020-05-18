@@ -48,10 +48,16 @@
                                     placeholder="{{__('storeDashboard.sePhDescription')}}" required>
                             </div>
                         </div>
+                        <div class="row align-items-center mb-2">
+                            <div class="col-lg-3 col-form-label">
+                                Store DeepLink:
+                            </div>
+                            <div class="col-lg-9">https://desarrollo.repartiendo.app/comercio/{{$restaurant->deeplink_alias}}</div>
+                        </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label">{{__('storeDashboard.seLblImage')}}:</label>
                             <div class="col-lg-9">
-                                <img src="{{ substr(url("/"), 0, strrpos(url("/"), '/')) }}{{ $restaurant->image }}" alt="Image" width="160" style="border-radius: 0.275rem;">
+                                <img class="mb-2" src="{{ substr(url("/"), 0, strrpos(url("/"), '/')) }}{{ $restaurant->image }}" alt="Image" width="160" style="border-radius: 0.275rem;">
                                 <img class="slider-preview-image hidden" style="border-radius: 0.275rem;"/>
                                 <div class="uploader">
                                     <input type="hidden" name="old_image" value="{{ $restaurant->image }}">

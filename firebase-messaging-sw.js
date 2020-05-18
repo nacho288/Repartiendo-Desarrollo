@@ -1,7 +1,7 @@
 importScripts("https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js");
 importScripts("https://www.gstatic.com/firebasejs/5.9.4/firebase-messaging.js");
 firebase.initializeApp({
-    messagingSenderId: "421825108654"
+    messagingSenderId: "587656068333"
 });
 const messaging = firebase.messaging();
 messaging.setBackgroundMessageHandler(function(payload) {
